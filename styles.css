@@ -1,0 +1,321 @@
+body {
+  background-image: url("./images/GOTHorsesBattle.png");
+}
+
+#header {
+  font-family: Mason-Serif;
+  color: lightgray;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+}
+
+.cellNumbers {
+  font-size: 25px;
+  font-family: Mason-Serif;
+  color: lightgrey;
+  display: flex;
+  justify-content: space-evenly;
+  height: 900px;
+  width: 20px;
+  flex-direction: column;
+}
+
+/* Controls the board positioning/centered + everything around it  */
+.gridContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  font-size: 25px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Controls the grid/game board */
+#chessgame {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "a8 b8 c8 d8 e8 f8 g8 h8"
+    "a7 b7 c7 d7 e7 f7 g7 h7"
+    "a6 b6 c6 d6 e6 f6 g6 h6"
+    "a5 b5 c5 d5 e5 f5 g5 h5"
+    "a4 b4 c4 d4 e4 f4 g4 h4"
+    "a3 b3 c3 d3 e3 f3 g3 g3"
+    "a2 b2 c2 d2 e2 f2 g2 h2"
+    "a1 b1 c1 d1 e1 f1 g1 h1";
+  height: 847.92px;
+  width: 847.92px;
+}
+
+/* Controls the board + each gamecell */
+.gamecell {
+  border: 3px solid black;
+  height: 100px;
+  width: 100px;
+  position: relative;
+  overflow: hidden;
+}
+
+.chessPiece {
+  height: 101px;
+  position: absolute;
+  cursor: move;
+}
+
+.cellLetter {
+  font-size: 25px;
+  font-family: Mason-Serif;
+  color: lightgrey;
+  text-justify: center;
+  text-align: center;
+}
+
+.graveYard {
+  display: flex;
+  margin-left: 250px;
+  margin-right: 230px;
+  height: 100px;
+  border: 3px solid black;
+  background-color: darkgrey;
+  font-size: 25px;
+  font-family: Mason-Serif;
+  color: lightgrey;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Player Turn + Reset button */
+.auxContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* #playerTurn {
+  font-size: 30px;
+} */
+
+#reset-button {
+  border-color: black;
+  font-size: 20px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  font-family: Mason-Serif;
+  background-color: darkgrey;
+}
+
+/* Game Cells */
+/* Row 8 */
+/* #a8{
+    background-color: lightgray;
+}
+#b8{
+    background-color: darkgray;
+}
+#c8{
+    background-color: lightgray;
+}
+#d8{
+    background-color: darkgray;
+}
+#e8{
+    background-color: lightgray;
+}
+#f8{
+    background-color: darkgray;
+}
+#g8{
+    background-color: lightgray;
+}
+#h8{
+    background-color: darkgray;
+} */
+
+/* Row 7 */
+/* #a7{
+    background-color: darkgray;
+}
+#b7{
+    background-color: lightgray;
+}
+#c7{
+    background-color: darkgray;
+}
+#d7{
+    background-color: lightgray;
+}
+#e7{
+    background-color: darkgray;
+}
+#f7{
+    background-color: lightgray;
+}
+#g7{
+    background-color: darkgray;
+}
+#h7{
+    background-color: lightgray;
+} */
+
+/* Row 6 */
+/* #a6{
+    background-color: lightgray;
+}
+#b6{
+    background-color: darkgray;
+}
+#c6{
+    background-color: lightgray;
+}
+#d6{
+    background-color: darkgray;
+}
+#e6{
+    background-color: lightgray;
+}
+#f6{
+    background-color: darkgray;
+}
+#g6{
+    background-color: lightgray;
+}
+#h6{
+    background-color: darkgray;
+} */
+
+/* Row 5 */
+/* #a5{
+    background-color: darkgray;
+}
+#b5{
+    background-color: lightgray;
+}
+#c5{
+    background-color: darkgray;
+}
+#d5{
+    background-color: lightgray;
+}
+#e5{
+    background-color: darkgray;
+}
+#f5{
+    background-color: lightgray;
+}
+#g5{
+    background-color: darkgray;
+}
+#h5{
+    background-color: lightgray;
+} */
+
+/* Row 4 */
+/* #a4{
+    background-color: lightgray;
+}
+#b4{
+    background-color: darkgray;
+}
+#c4{
+    background-color: lightgray;
+}
+#d4{
+    background-color: darkgray;
+}
+#e4{
+    background-color: lightgray;
+}
+#f4{
+    background-color: darkgray;
+}
+#g4{
+    background-color: lightgray;
+}
+#h4{
+    background-color: darkgray;
+} */
+
+/* Row 3 */
+/* #a3{
+    background-color: darkgray;
+}
+#b3{
+    background-color: lightgray;
+}
+#c3{
+    background-color: darkgray;
+}
+#d3{
+    background-color: lightgray;
+}
+#e3{
+    background-color: darkgray;
+}
+#f3{
+    background-color: lightgray;
+}
+#g3{
+    background-color: darkgray;
+}
+#h3{
+    background-color: lightgray;
+} */
+
+/* Row 2 */
+/* #a2{
+    background-color: lightgray;
+}
+#b2{
+    background-color: darkgray;
+}
+#c2{
+    background-color: lightgray;
+}
+#d2{
+    background-color: darkgray;
+}
+#e2{
+    background-color: lightgray;
+}
+#f2{
+    background-color: darkgray;
+}
+#g2{
+    background-color: lightgray;
+}
+#h2{
+    background-color: darkgray;
+} */
+
+/* Row 1 */
+/* #a1{
+    background-color: darkgray;
+}
+#b1{
+    background-color: lightgray;
+}
+#c1{
+    background-color: darkgray;
+}
+#d1{
+    background-color: lightgray;
+}
+#e1{
+    background-color: darkgray;
+}
+#f1{
+    background-color: lightgray;
+}
+#g1{
+    background-color: darkgray;
+}
+#h1{
+    background-color: lightgray;
+} */
