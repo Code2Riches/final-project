@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Link Styles CSS -->
+    <link rel="stylesheet" href="styles.css" />
+    
+    <!-- Link GOT Font Family -->
+    <link rel="stylesheet" href="https://use.typekit.net/mqv1sgp.css">
+
+    <!-- Link JS -->
+    <script src="main.js" defer></script>
+
+    <title>GOT Chess</title>
+  
+  </head>
+  <body>
+    <h1 id="header">Game of Chess</h1>
+
+    <!-- Grid Container -->
+    <div class="gridContainer">
+      <div class="cellNumbers">
+        <div id="cellNum-8">8</div>
+        <div id="cellNum-7">7</div>
+        <div id="cellNum-6">6</div>
+        <div id="cellNum-5">5</div>
+        <div id="cellNum-4">4</div>
+        <div id="cellNum-3">3</div>
+        <div id="cellNum-2">2</div>
+        <div id="cellNum-1">1</div>
+      </div>
+
+      <div id="chessgame">
+        <!-- Row 8 -->
+        <!-- <div class="cellprefix">8</div> -->
+        <div id="a8" class="gamecell row-8">
+          <img src="./RoyalImages/1B.png" draggable="true" class="chessPiece" />
+        </div>
+        <div id="b8" class="gamecell row-8">
+          <img src="./RoyalImages/2B.png" draggable="true" class="chessPiece" />
+        </div>
+        <div id="c8" class="gamecell row-8">
+          <img src="./RoyalImages/3B.png" draggable="true" class="chessPiece" />
+        </div>
+        <div id="d8" class="gamecell row-8">
+          <img src="./RoyalImages/4B.png" draggable="true" class="chessPiece" />
+        </div>
+        <div id="e8" class="gamecell row-8">
+          <img src="./RoyalImages/5B.png" draggable="true" class="chessPiece" />
+        </div>
+        <div id="f8" class="gamecell row-8">
+          <img src="./RoyalImages/6B.png" draggable="true" class="chessPiece" />
+        </div>
+        <div id="g8" class="gamecell row-8">
+          <img src="./RoyalImages/7B.png" draggable="true" class="chessPiece" />
+        </div>
+        <div id="h8" class="gamecell row-8">
+          <img src="./RoyalImages/8B.png" draggable="true" class="chessPiece" />
+        </div>
+
+        <!-- Row 7 -->
+        <!-- <div class="cellprefix">7</div> -->
+        <div id="a7" class="gamecell row-7">
+          <img src="./images/BlackPawn.png" draggable="true" class="chessPiece" />
+        </div>
+        <div id="b7" class="gamecell row-7">
+          <img src="./images/BlackPawn.png" draggable="true" class="chessPiece" />
+        </div>
+        <div id="c7" class="gamecell row-7">
+          <img src="./images/BlackPawn.png" draggable="true" class="chessPiece" />
+        </div>
+        <div id="d7" class="gamecell row-7">
+          <img src="./images/BlackPawn.png" draggable="true" class="chessPiece" />
+        </div>
+        <div id="e7" class="gamecell row-7">
+          <img src="./images/BlackPawn.png" draggable="true" class="chessPiece" />
+        </div>
+        <div id="f7" class="gamecell row-7">
+          <img src="./images/BlackPawn.png" draggable="true" class="chessPiece" />
+        </div>
+        <div id="g7" class="gamecell row-7">
+          <img src="./images/BlackPawn.png" draggable="true" class="chessPiece" />
+        </div>
+        <div id="h7" class="gamecell row-7">
+          <img src="./images/BlackPawn.png" draggable="true" class="chessPiece" />
+        </div>
+
+        <!-- Row 6 -->
+        <!-- <div class="cellprefix">6</div> -->
+        <div id="a6" class="gamecell"></div>
+        <div id="b6" class="gamecell"></div>
+        <div id="c6" class="gamecell"></div>
+        <div id="d6" class="gamecell"></div>
+        <div id="e6" class="gamecell"></div>
+        <div id="f6" class="gamecell"></div>
+        <div id="g6" class="gamecell"></div>
+        <div id="h6" class="gamecell"></div>
+
+        <!-- Row 5 -->
+        <!-- <div class="cellprefix">5</div> -->
+        <div id="a5" class="gamecell"></div>
+        <div id="b5" class="gamecell"></div>
+        <div id="c5" class="gamecell"></div>
+        <div id="d5" class="gamecell"></div>
+        <div id="e5" class="gamecell"></div>
+        <div id="f5" class="gamecell"></div>
+        <div id="g5" class="gamecell"></div>
+        <div id="h5" class="gamecell"></div>
+
+        <!-- Row 4 -->
+        <!-- <div class="cellprefix">4</div> -->
+        <div id="a4" class="gamecell"></div>
+        <div id="b4" class="gamecell"></div>
+        <div id="c4" class="gamecell"></div>
+        <div id="d4" class="gamecell"></div>
+        <div id="e4" class="gamecell"></div>
+        <div id="f4" class="gamecell"></div>
+        <div id="g4" class="gamecell"></div>
+        <div id="h4" class="gamecell"></div>
+
+        <!-- Row 3 -->
+        <!-- <div class="cellprefix">3</div> -->
+        <div id="a3" class="gamecell"></div>
+        <div id="b3" class="gamecell"></div>
+        <div id="c3" class="gamecell"></div>
+        <div id="d3" class="gamecell"></div>
+        <div id="e3" class="gamecell"></div>
+        <div id="f3" class="gamecell"></div>
+        <div id="g3" class="gamecell"></div>
+        <div id="h3" class="gamecell"></div>
+
+        <!-- Row 2 -->
+        <!-- <div class="cellprefix">2</div> -->
+        <div id="a2" class="gamecell row-2">
+          <img src="./images/WhitePawn.png" class="chessPiece" />
+        </div>
+        <div id="b2" class="gamecell row-2">
+          <img src="./images/WhitePawn.png" class="chessPiece" />
+        </div>
+        <div id="c2" class="gamecell row-2">
+          <img src="./images/WhitePawn.png" class="chessPiece" />
+        </div>
+        <div id="d2" class="gamecell row-2">
+          <img src="./images/WhitePawn.png" class="chessPiece" />
+        </div>
+        <div id="e2" class="gamecell row-2">
+          <img src="./images/WhitePawn.png" class="chessPiece" />
+        </div>
+        <div id="f2" class="gamecell row-2">
+          <img src="./images/WhitePawn.png" class="chessPiece" />
+        </div>
+        <div id="g2" class="gamecell row-2">
+          <img src="./images/WhitePawn.png" class="chessPiece" />
+        </div>
+        <div id="h2" class="gamecell row-2">
+          <img src="./images/WhitePawn.png" class="chessPiece" />
+        </div>
+
+        <!-- Row 1 -->
+        <!-- <div class="cellprefix">1</div> -->
+        <div id="a1" class="gamecell row-1">
+          <img src="./RoyalImages/1W.png" class="chessPiece" />
+        </div>
+        <div id="b1" class="gamecell row-1">
+          <img src="./RoyalImages/2W.png" class="chessPiece" />
+        </div>
+        <div id="c1" class="gamecell row-1">
+          <img src="./RoyalImages/3W.png" class="chessPiece" />
+        </div>
+        <div id="d1" class="gamecell row-1">
+          <img src="./RoyalImages/4W.png" class="chessPiece" />
+        </div>
+        <div id="e1" class="gamecell row-1">
+          <img src="./RoyalImages/5W.png" class="chessPiece" />
+        </div>
+        <div id="f1" class="gamecell row-1">
+          <img src="./RoyalImages/6W.png" class="chessPiece" />
+        </div>
+        <div id="g1" class="gamecell row-1">
+          <img src="./RoyalImages/7W.png" class="chessPiece" />
+        </div>
+        <div id="h1" class="gamecell row-1">
+          <img src="./RoyalImages/8W.png" class="chessPiece" />
+        </div>
+
+        <!-- Columns -->
+        <div class="cellLetter">A</div>
+        <div class="cellLetter">B</div>
+        <div class="cellLetter">C</div>
+        <div class="cellLetter">D</div>
+        <div class="cellLetter">E</div>
+        <div class="cellLetter">F</div>
+        <div class="cellLetter">G</div>
+        <div class="cellLetter">H</div>
+      </div>
+      <!-- End of Chessgame -->
+    </div>
+    <!-- End of Grid Container -->
+    <br />
+    <br />
+    <div class="graveYard">Graveyard</div>
+    <br>
+    <br>
+    <!-- Aux Container -->
+    <div class="auxContainer">
+      <!-- <div id="playerTurn">It's White's/Black's turn!</div> -->
+      <br />
+      <button id="reset-button">Reset Board</button>
+    </div>
+    <!-- End of Aux Container -->
+
+  </body>
+</html>
